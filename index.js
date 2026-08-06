@@ -29,6 +29,9 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+  var welcomeScreenElement = document.querySelector('#welcomeScreen');
+  var welcomeProjectNameElement = document.querySelector('#welcomeProjectName');
+  var welcomeEnterButtonElement = document.querySelector('#welcomeEnterButton');
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -384,6 +387,16 @@
       }
     }
     return null;
+  }
+
+  // Welcome / splash screen.
+  if (welcomeProjectNameElement) {
+    welcomeProjectNameElement.innerHTML = sanitize(data.name || '');
+  }
+  if (welcomeEnterButtonElement && welcomeScreenElement) {
+    welcomeEnterButtonElement.addEventListener('click', function() {
+      welcomeScreenElement.classList.add('hidden');
+    });
   }
 
   // Display the initial scene.
