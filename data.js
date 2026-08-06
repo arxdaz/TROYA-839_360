@@ -40,6 +40,12 @@ var APP_DATA = {
           "pitch": 0.14769453312230496,
           "rotation": 0,
           "target": "2-cocina"
+        },
+        {
+          "yaw": 0.43320963584643124,
+          "pitch": 0.21709536199446866,
+          "rotation": 0,
+          "target": "3-recamara"
         }
       ],
       "infoHotspots": []
@@ -84,6 +90,12 @@ var APP_DATA = {
           "pitch": 0.19694918742906253,
           "rotation": 0,
           "target": "2-cocina"
+        },
+        {
+          "yaw": -0.5591192195451384,
+          "pitch": 0.16079559470356308,
+          "rotation": 0,
+          "target": "3-recamara"
         }
       ],
       "infoHotspots": []
@@ -126,6 +138,44 @@ var APP_DATA = {
         {
           "yaw": -0.5708193684762897,
           "pitch": 0.2328144604395792,
+          "rotation": 0,
+          "target": "0-recibidor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "3-recamara",
+      "name": "RECAMARA",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.9522242591332901,
+          "pitch": 0.4080334424758334,
           "rotation": 0,
           "target": "0-recibidor"
         }
